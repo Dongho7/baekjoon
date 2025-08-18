@@ -11,8 +11,8 @@ for i in range(M):
 
 for i in range(K):
     x1, y1, x2, y2 = map(int, input().split())
-    for k in range(y1, y2): #y1 부터 (y2-y1-1) 만큼 range 돌려
-        #x1 부터 (x2-x1-1) 만큼 range 돌려
+    for k in range(y1, y2): #y1 부터
+        #x1 부터 
         for j in range(x1, x2):
             maps[k][j] = 1
 
@@ -50,4 +50,5 @@ for i in range(M):
 
 area_list.sort()
 print(count)
+
 print(*area_list)
